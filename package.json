@@ -1,0 +1,24 @@
+{
+  "name": "orama-version-comparator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "bench:search:bun": "bun src/search.ts",
+    "bench:search:node": "node --loader tsx src/search.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@orama/orama": "1.2.11",
+    "mitata": "^0.1.6",
+    "orama-1.2.11": "npm:@orama/orama@1.2.11",
+    "orama-2.0.0-beta.1": "npm:@orama/orama@2.0.0-beta.1",
+    "orama-local": "file:../orama/packages/orama",
+    "tsx": "^3.13.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.2.0"
+  }
+}
