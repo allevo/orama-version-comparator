@@ -6,19 +6,21 @@
   "type": "module",
   "scripts": {
     "bench:search:bun": "bun src/search.ts",
-    "bench:search:node": "node --loader tsx src/search.ts"
+    "bench:search:node": "node --import tsx src/search.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@orama/orama": "1.2.11",
-    "mitata": "^0.1.6",
+    "benny": "^3.7.1",
     "orama-1.2.11": "npm:@orama/orama@1.2.11",
-    "orama-2.0.0-beta.1": "npm:@orama/orama@2.0.0-beta.1",
+    "orama-2.0.12": "npm:@orama/orama@2.0.12",
     "orama-local": "file:../orama/packages/orama",
-    "tsx": "^3.13.0"
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
-    "@faker-js/faker": "^8.2.0"
+    "@faker-js/faker": "^8.2.0",
+    "@types/node": "^20.8.10"
   }
 }
