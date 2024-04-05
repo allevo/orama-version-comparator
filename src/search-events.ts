@@ -1,8 +1,7 @@
 import * as orama2012 from 'orama-2.0.12'
-import * as orama1211 from 'orama-1.2.11'
 import * as oramaLocal from 'orama-local'
 import b from 'benny'
-import events from './events.js'
+import { events } from './dataset/index.js'
 
 const documents = events
 const schema = {

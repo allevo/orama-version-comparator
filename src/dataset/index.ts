@@ -1,6 +1,6 @@
 import fs from 'node:fs'
 
-const eventsFromFile = JSON.parse(fs.readFileSync('./dataset/events.json', 'utf8')) as {
+const eventsFromFile = JSON.parse(fs.readFileSync('./src/dataset/events.json', 'utf8')) as {
     result: {
         count: number
         events: {
@@ -37,4 +37,4 @@ const events: {
         }
     })
 
-export default events
+export { events }

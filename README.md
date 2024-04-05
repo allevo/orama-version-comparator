@@ -7,10 +7,13 @@ I'll thank you a lot.
 ## Local configuration
 
 - open `package.json` and replace the path under `dependencies.orama-local`
-- `pnpm install`
+- run `pnpm install`
 
 ## Usage
+
 ```bash
-pnpm run bench:search:bun
-pnpm run bench:search:node
+node --import tsx src/search.tsx
+node --import tsx src/search-events.tsx
+node --import tsx src/insert.tsx
+node --import tsx src/insert-events.tsx
 ```
